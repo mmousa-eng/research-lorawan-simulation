@@ -1,0 +1,15 @@
+building:
+  num_floors: 6
+  floor_height_m: 3
+  slab_attenuation_db: 20   # per floor (concrete)
+
+lorawan_device:
+  tx_power_dbm: 20
+  spreading_factor: 12
+  bandwidth_khz: 125
+  frequency_mhz: 868
+  receiver_sensitivity_dbm: -139
+
+environment:
+  reference_distance_m: 1
+  path_loss_exponent: 2.7  # indoor / building
