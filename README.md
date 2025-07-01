@@ -7,22 +7,6 @@ Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN
 ## 📈 Objective
 Model and visualize LoRaWAN signal strength through concrete floors with configurable parameters and sensitivity comparison.
 
-## Usage
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Edit `config.yaml` to set simulation parameters.
-3. Run the simulation:
-   ```bash
-   python main.py
-   ```
-4. View the generated RSSI plot.
+## 📁 Project Structure
 
-## File Structure
-- `device.py`: LoRaDevice class
-- `models.py`: Signal propagation models
-- `simulate.py`: RSSI calculation logic
-- `plot.py`: Plotting utilities
-- `main.py`: Orchestrates config, simulation, and plotting
-- `config.yaml`: Simulation parameters
+## 📊 Results
