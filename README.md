@@ -1,6 +1,5 @@
 # 🔍 Research: LoRaWAN Building Penetration Simulation
-
-This project simulates the signal reach of a LoRaWAN device placed on the rooftop of a 6-storey concrete building, estimating the received signal strength (RSSI) at each floor down to the basement.
+ This LoRaWAN simulation tool was developed as part of a broader system used in my patented design for a smart water tank monitoring solution. It was used to assess signal reliability in multi-story buildings where sensors were placed in rooftops and basements.
 
 Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN Simulation
 
