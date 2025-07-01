@@ -1,5 +1,5 @@
 # 🔍 Research: LoRaWAN Building Penetration Simulation
- This LoRaWAN simulation tool was developed as part of a broader system used in my patented design for a smart water tank monitoring solution. It was used to assess signal reliability in multi-story buildings where sensors were placed in rooftops and basements.
+ This LoRaWAN simulation was developed as part of a broader system used in my patented design for a smart water tank monitoring solution. It was used to assess signal reliability in multi-story buildings.
 
 Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN Simulation
 
