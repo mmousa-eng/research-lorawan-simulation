@@ -9,3 +9,4 @@ Model and visualize LoRaWAN signal strength through concrete floors with configu
 ## 📁 Project Structure
 
 ## 📊 Results
+Simulation results show that the LoRaWAN signal can reliably penetrate up to two concrete floors in a typical multi-storey residential building.
