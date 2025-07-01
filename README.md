@@ -5,9 +5,7 @@ This project simulates the signal reach of a LoRaWAN device placed on the roofto
 Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN Simulation
 
 ## 📈 Objective
-- Model LoRaWAN signal propagation through concrete floors
-- Visualize RSSI per floor and compare to device sensitivity
-- Allow easy configuration of parameters (floors, power, attenuation, etc.)
+Develop a configurable Python tool to model and visualize LoRaWAN signal propagation through concrete floors by calculating floor-wise RSSI and comparing it against receiver sensitivity thresholds.
 
 ## Usage
 1. Install dependencies:
