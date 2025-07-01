@@ -5,6 +5,7 @@ Plot RSSI vs building floor with receiver sensitivity threshold.
 """
 
 import matplotlib.pyplot as plt
+import os
 
 def plot_rssi_vs_floor(rssi_data, receiver_sensitivity_dbm):
     """
@@ -28,4 +29,13 @@ def plot_rssi_vs_floor(rssi_data, receiver_sensitivity_dbm):
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
+
+    # Create output folder if it doesn't exist
+    output_folder = "output"
+    os.makedirs(output_folder, exist_ok=True)
+    output_path = os.path.join(output_folder, "simulation_plot.png")
+    
+    plt.savefig(output_path)
+    print(f"Plot saved as {output_path}")
+
     plt.show()
