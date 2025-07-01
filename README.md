@@ -6,7 +6,5 @@ Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN
 ## 📈 Objective
 Model and visualize LoRaWAN signal strength through concrete floors with configurable parameters and sensitivity comparison.
 
-## 📁 Project Structure
-
 ## 📊 Results
 Simulation results show that the LoRaWAN signal can reliably penetrate up to two concrete floors in a typical multi-storey residential building.
