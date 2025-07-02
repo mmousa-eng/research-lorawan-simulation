@@ -1,28 +1,10 @@
 # 🔍 Research: LoRaWAN Building Penetration Simulation
+ This LoRaWAN simulation was developed as part of a broader system used in my patented design for a smart water tank monitoring solution. It was used to assess signal reliability in multi-story buildings.
 
-This project simulates the signal reach of a LoRaWAN device placed on the rooftop of a 6-storey concrete building, estimating the received signal strength (RSSI) at each floor down to the basement.
+Technologies: Python • Matplotlib • PyYAML • Signal Processing • LoRaWAN
 
-## Goals
-- Model LoRaWAN signal propagation through concrete floors
-- Visualize RSSI per floor and compare to device sensitivity
-- Allow easy configuration of parameters (floors, power, attenuation, etc.)
+## 📈 Objective
+Model and visualize LoRaWAN signal strength through concrete floors with configurable parameters and sensitivity comparison.
 
-## Usage
-1. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Edit `config.yaml` to set simulation parameters.
-3. Run the simulation:
-   ```bash
-   python main.py
-   ```
-4. View the generated RSSI plot.
-
-## File Structure
-- `device.py`: LoRaDevice class
-- `models.py`: Signal propagation models
-- `simulate.py`: RSSI calculation logic
-- `plot.py`: Plotting utilities
-- `main.py`: Orchestrates config, simulation, and plotting
-- `config.yaml`: Simulation parameters
+## 📊 Results
+Simulation results show that the LoRaWAN signal can reliably penetrate up to two concrete floors in a typical multi-storey residential building.
