@@ -62,11 +62,46 @@ def main():
         reference_distance_m=reference_distance
     )
 
-    # Print reachability report
-    print_reachability_report(rssi_results, device.receiver_sensitivity_dbm)
+    # Simulate for both 868 MHz and 433 MHz
+    device_868 = LoRaDevice(
+        frequency_mhz=868,
+        tx_power_dbm=device_cfg["tx_power_dbm"],
+        bandwidth_khz=device_cfg["bandwidth_khz"],
+        spreading_factor=device_cfg["spreading_factor"],
+        receiver_sensitivity_dbm=device_cfg["receiver_sensitivity_dbm"]
+    )
+    device_433 = LoRaDevice(
+        frequency_mhz=433,
+        tx_power_dbm=device_cfg["tx_power_dbm"],
+        bandwidth_khz=device_cfg["bandwidth_khz"],
+        spreading_factor=device_cfg["spreading_factor"],
+        receiver_sensitivity_dbm=device_cfg["receiver_sensitivity_dbm"]
+    )
 
-    # Plot and save RSSI vs floor
-    plot_rssi_vs_floor(rssi_results, device.receiver_sensitivity_dbm)
+    # Simulate RSSI for both frequencies
+    rssi_results_868 = simulate_signal(
+        device_868, floors,
+        floor_height_m=floor_height,
+        slab_attenuation_db=slab_attenuation,
+        path_loss_exponent=path_loss_exp,
+        reference_distance_m=reference_distance
+    )
+    rssi_results_433 = simulate_signal(
+        device_433, floors,
+        floor_height_m=floor_height,
+        slab_attenuation_db=slab_attenuation,
+        path_loss_exponent=path_loss_exp,
+        reference_distance_m=reference_distance
+    )
+
+    # Print reachability report for both
+    print("\n--- 868 MHz ---")
+    print_reachability_report(rssi_results_868, device_868.receiver_sensitivity_dbm)
+    print("\n--- 433 MHz ---")
+    print_reachability_report(rssi_results_433, device_433.receiver_sensitivity_dbm)
+
+    # Plot both on the same figure
+    plot_rssi_vs_floor(rssi_results_868, rssi_results_433, device_868.receiver_sensitivity_dbm)
 
 if __name__ == "__main__":
     main()
