@@ -3,13 +3,16 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# Virtual environment folder
+# Virtual environments
 .venv/
+venv/
+env/
 
-# VS Code settings folder
+# VS Code settings
 .vscode/
+tempCodeRunnerFile.py
 
-# Distribution / packaging
+# Packaging
 build/
 dist/
 *.egg-info/
@@ -21,9 +24,9 @@ pip-delete-this-directory.txt
 
 # Unit test / coverage reports
 htmlcov/
-.coverage
 .tox/
 .nox/
+.coverage
 .coverage.*
 .cache
 nosetests.xml
@@ -32,20 +35,37 @@ coverage.xml
 *.py,cover
 
 # Jupyter Notebook checkpoints
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # MacOS system files
 .DS_Store
 
-# Output folder for plots, logs, etc.
-output/
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 
 # Logs and debug files
 *.log
 
-# Python virtualenv
-env/
-venv/
-
-# Others
+# IDE/editor swap/temp files
 *.swp
+*.swo
+*.tmp
+
+# Output folders (e.g., generated plots or exports)
+output/
+results/
+exports/
+figures/
+
+# Misc
+*.bak
+*.old
+*.orig
+
+# PyCharm
+.idea/
+
+# Jupyter runtime
+*.json
